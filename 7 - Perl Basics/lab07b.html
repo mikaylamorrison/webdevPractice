@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" href="lab07.css">
+		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap" rel="stylesheet">
+		<meta charset="utf-8">
+		<title>CPS530: Lab 7 (Mikayla M.)</title>
+	</head>
+
+	<body>
+		<div>
+			<header>
+				<h1>
+					Lab 7: Perl and CGI
+				</h1>
+			</header>
+			
+			<main>
+				<section>
+					<h3>Problem 1: </h3>
+					<a href="https://www2.cs.torontomu.ca/~msmorris/cgi-bin/lab07a.cgi">Click Here</a>
+						
+				</section>
+				<hr>
+				
+				
+				<section>
+					<h3>Problem 2: Registration Form</h3>
+					  <form action="https://www2.cs.torontomu.ca/~msmorris/cgi-bin/lab07b.cgi" method="POST" enctype="multipart/form-data">
+						<label>First Name</label>
+							<br>
+							<input class="field" type="text" name="firstName" required>
+							<br>
+						<label>Last Name</label>
+							<br>
+							<input class="field" type="text" name="lastName" required>
+							<br>
+						<label>Street Name</label>
+							<br>
+							<input class="field" type="text" name="address" required>
+							<br>
+						<label>City</label>
+							<br>
+							<input class="field" type="text" name="city" required>
+							<br>
+						<label>Postal Code</label>
+							<br>
+							<input class="field" type="text" name="postalCode" required>
+							<br>
+						<label>Province</label>
+							<br>
+							<select name="province" required>
+								<option value="Alberta">Alberta</option>
+								<option value="British Columbia">British Columbia</option>
+								<option value="Manitoba">Manitoba</option>
+								<option value="New Brunswick">New Brunswick</option>
+								<option value="Newfoundland & Labrador">Newfoundland & Labrador</option>
+								<option value="Northwest Territories">Northwest Territories</option>
+								<option value="Nova Scotia">Nova Scotia</option>
+								<option value="Nunavut">Nunavut</option>
+								<option value="Ontario">Ontario</option>
+								<option value="Prince Edward Island">Prince Edward Island</option>
+								<option value="Quebec">Quebec</option>
+								<option value="Saskatchewan">Saskatchewan</option>
+								<option value="Yukon">Yukon</option>
+							</select>
+							<br>
+						<label>Phone Number</label>
+							<br>
+							<input class="field" type="text" name="phone" required>
+							<br>
+						<label>Email Address</label>
+							<br>
+							<input class="field" type="email" name="email" required>
+							<br>
+						<label>Upload Photograph</label>
+							<br>
+							<input class="field" type="file" name="picture" required>
+							<br>
+						<input type="submit" value="Register">
+					</form>
+				</section>
+				<hr>
+				
+			</main>
+		</div>
+		<footer>
+			<p>Author: Mikayla Morrison</p>
+			<p>Student Number: 501182358</p>
+			<p><a href="mailto:m1morrison@torontomu.ca">Email: m1morrison@torontomu.ca</a> </p>
+			<p>Class: CPS530</p>
+			<p>Section: 7</p>
+		</footer>
+	</body>
+
+</html>

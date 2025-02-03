@@ -1,0 +1,114 @@
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.field {
+  width: 40%;
+  box-sizing: border-box;
+  border: 2px solid #C4D6B0;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+}
+
+table {
+	margin: 20px auto;
+	border-collapse: collapse;
+	width: auto;
+}
+
+table td {
+	border: 3px solid #C4D6B0;
+	padding: 15px;
+	text-align: center;
+	font-family: "Assistant", serif;
+	color: #381D2A;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.favContainer {
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	opacity: 0.7;
+	z-index: 100;
+}
+
+.favContainer img {
+	max-width: 150px;
+	max-height: 150px;
+}
+
+h2 {
+	font-size: 40px;
+	font-family: "Assistant", serif;
+	color: #BA5624;
+}
+
+.formImage {
+	height: 100px;
+	padding: 0px 20px 0px 20px;
+}
+
+.formImage:hover
+{
+	border: 4px solid #BA5624;
+}
+
+.q1div h3 {
+	color: white;
+	font-size: 100px;
+}
+
+.error
+{
+	font-family: "Assistant", serif;
+	color: #ff000d;
+	font-weight: bold;
+}
+
+h1 {
+	font-family: "Playfair Display", serif;
+	color: #381D2A;
+	font-weight: bold;
+	text-align: center;
+}
+
+h3 {
+	padding: 0px 30px 0px 30px;
+	font-family: "Playfair Display", serif;
+	color: #381D2A;
+}
+
+p,label {
+	padding: 0px 30px 0px 30px;
+	font-family: "Assistant", serif;
+	color: #381D2A;
+}
+
+h4 {
+	padding: 0px 30px 0px 30px;
+	font-family: "Assistant", serif;
+	color: #BA5624;
+}
+
+footer {
+	font-family: "Assistant", serif;
+	color: #381D2A;
+	display: table-row;
+	font-size: 12px;
+}
+
+body 
+{
+	background-image: url("dot-grid.jpeg");
+	text-align: center;
+}
+
+form
+{
+	padding: 0px 30px 0px 30px;
+}

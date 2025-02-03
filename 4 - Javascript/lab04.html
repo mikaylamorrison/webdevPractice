@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" href="lab04.css">
+		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap" rel="stylesheet">
+		<meta charset="utf-8">
+		<title>CPS530: Lab 4 (Mikayla M.)</title>
+	</head>
+
+	<body>
+		<div>
+			<header>
+				<h1>
+					Lab 4: Practicing JavaScript
+				</h1>
+			</header>
+			
+			<main>
+				<section>
+					<h3>Problem 1: Bookmarks</h3>
+					<ul id="bookmark-links"></ul>
+						<script>
+						  // Favourite Websites
+							function createBookmarks() {
+								
+								// creating list of URL objects, that way we can display the titles of the URLS
+								const urls = [
+									{address: "http://neverssl.com", title: "NeverSSL"},
+									{address: "https://cs.torontomu.ca/~msmorris/CPS530/Lab02/lab02.html", title: "Lab 2"},
+									{address: "https://www.goodreads.com/", title: "Goodreads"},
+									{address: "http://httpforever.com/", title: "httpForever"},
+									{address: "https://studywithme.io/aesthetic-pomodoro-timer/", title: "Pomodoro Timer"}];
+								
+								// creating list in HTML
+								let list = document.getElementById("bookmark-links");
+								
+								// iterating through list
+								for (let i = 0; i < urls.length; i++) {
+									
+									// creating list element for each URL
+									let li = document.createElement('li');
+									
+									// if it is secure, then add green lock
+									if (urls[i].address.includes("https")) 
+									{
+										// must use inner HTML to set HTML for an element
+										li.innerHTML = `<img src="secure.png" height="24px" alt="Secure"> <a href="${urls[i].address}">${urls[i].title}</a>`;
+									}
+									
+									// if it is not secure, then add red lock
+									else 
+									{
+										// must use inner HTML to set HTML for an element
+										li.innerHTML = `<img src="insecure.png" height="24px" alt="Insecure"> <a href="${urls[i].address}">${urls[i].title}</a>`;
+									}
+									
+									// append the list element to the actual list in HTML
+									list.appendChild(li);
+								}
+							}
+							
+							// calling the funcion to create bookmarks
+							createBookmarks();
+						</script>
+				</section>
+				<hr>
+				
+				<section>
+					<h3>Problem 2: Palindromes</h3>
+						<script>			
+							// Palindromes:remove punctuation and cases
+							function removePandC(stringy)
+							{
+								// g means global search; will search past first instance
+								 return stringy.replace(/[.,\s\/#!$%\^&\*;:{}=\-_`'~()’]/g, "").toLowerCase();
+							}
+							
+							// Palindromes: tester
+							function palindromeOrNo(stringy)
+							{
+								let cleanStringy = removePandC(stringy);
+								// split makes the string into an array of characters, reverse reverses elements in array, join combines the reversed array back into a string
+								let testStringy = cleanStringy.split('').reverse().join('');
+								// print result
+								if (cleanStringy == testStringy)
+								{
+									document.write(`<p class="pTrue"> ${stringy}</p>`);
+								}
+								
+								else 
+								{
+									document.write(`<p class="pFalse"> ${stringy}</p>`);
+								}
+							}
+							
+							palindromeOrNo("Drab as a fool, aloof as a bard."); 
+							palindromeOrNo("It ain't over till it's over"); 
+							palindromeOrNo("radar"); 
+							palindromeOrNo("When you come to a fork in the road, take it"); 
+							palindromeOrNo("Marge lets Norah see Sharon’s telegram."); 
+						</script>
+				</section>
+				<hr>
+			</main>
+		</div>
+		
+		<footer>
+			<p>Author: Mikayla Morrison</p>
+			<p>Student Number: 501182358</p>
+			<p><a href="mailto:m1morrison@torontomu.ca">Email: m1morrison@torontomu.ca</a> </p>
+			<p>Class: CPS530</p>
+			<p>Section: 7</p>
+		</footer>
+	</body>
+
+</html>

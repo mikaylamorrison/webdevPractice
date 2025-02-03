@@ -1,0 +1,113 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+.grid-item {
+  border: 0px;
+  padding: 10px;
+  text-align: center;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.centerimg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+}
+
+.anim
+{
+	position:relative; 
+	animation: 3s ease 2s infinite alternate sunny;
+}
+
+@keyframes sunny
+{
+	0%   {top:0px; opacity: 0.2;}
+	100% {top:0px; opacity: 1;}
+}
+
+header > h1
+{
+	height: 50px;
+	padding: 15px;
+	border: 9px double #0b3142;
+	margin: 30;
+	text-align:center;
+}
+
+body 
+{
+	background-image: url("papyrus.jpeg");
+}
+
+h1, figcaption
+{
+	font-family: "Playfair Display", serif;
+	color: #0b3142;
+	font-weight: bold;
+	text-align: center;
+}
+
+h3, h4
+{
+	padding: 0px 30px 0px 30px;
+	font-family: "Playfair Display", serif;
+	color: #0b3142;
+}
+
+p
+{
+	padding: 0px 30px 0px 30px;
+	font-family: "Assistant", serif;
+	color: #0b3142;
+}
+
+a
+{
+	font-family: "Assistant", serif;
+	color: #0b3142;
+}
+
+section p::first-letter
+{
+	font-family: "Playfair Display", serif;
+	font-weight: bold;
+}
+
+hr
+{
+	visibility: hidden;
+}
+
+a:hover
+{
+	color: #F9A03F;
+}
+
+a:visited
+{
+	color: #D45113;
+}
+
+section > p:hover
+{
+	color: #D45113;
+}
+
+footer p
+{
+	font-family: "Assistant", serif;
+	color: #F9A03F;
+	display: table-row;
+	font-size: 12px;
+}
+

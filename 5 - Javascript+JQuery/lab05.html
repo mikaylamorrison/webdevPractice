@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" href="lab05.css">
+		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=close_fullscreen">
+		<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.1.js"></script> 
+		<meta charset="utf-8">
+		<script src="lab05.js"></script>
+		<title>CPS530: Lab 5 (Mikayla M.)</title>
+	</head>
+
+	<body>
+		<div>
+			<header>
+				<h1>
+					Lab 5: Practicing JQuery
+				</h1>
+			</header>
+			
+			<main>
+				<section>
+					<h3>Problem 1: Form Validation</h3>
+						
+						<form>
+							<label for="nameReq">Name</label>
+							<br>
+							<input class="field" type="text" id="nameReq">
+							<br>
+							<label for="addressReq">Address</label>
+							<br>
+							<input class="field" type="text" id="addressReq">
+							<br>
+							<label for="phoneReq">Phone Number</label>
+							<br>
+							<input class="field" type="text" id="phoneReq">
+							<br><br>
+							<input type="button" onclick="validateForm()" value="Submit">
+						</form>
+						
+						<div id="writeMessage"></div>
+				</section>
+				<hr>
+				
+				<section>
+					<h3>Problem 2: Counting Characters</h3>
+						<textarea id="counterInput" name="counter" cols="50" maxlength="1000" placeholder="Type your message here..."></textarea>
+						<p id="countAll" class="message">Characters: 0 </p> 
+						<p id="countAlphabet" class="message">Letters: 0 </p>
+				</section>
+				<hr>
+				
+				<section>
+					<h3 id="otter_img">Problem 3: Full Screen Image</h3>
+					<img src="otter.jpeg" alt="Otter" id="otter" width="300px">
+				</section>
+				<hr>
+				
+			</main>
+		</div>
+		<footer>
+			<p>Author: Mikayla Morrison</p>
+			<p>Student Number: 501182358</p>
+			<p><a href="mailto:m1morrison@torontomu.ca">Email: m1morrison@torontomu.ca</a> </p>
+			<p>Class: CPS530</p>
+			<p>Section: 7</p>
+		</footer>
+	</body>
+
+</html>

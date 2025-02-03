@@ -1,0 +1,58 @@
+body {
+	background-image: url("regal.png");
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+h1 {
+	font-family: "Playfair Display", serif;
+	color: #211A1D;
+	font-weight: bold;
+	text-align: center;
+}
+
+h3{
+	padding: 0px 30px 0px 30px;
+	font-family: "Playfair Display", serif;
+	color: #211A1D;
+}
+
+p {
+	padding: 0px 30px 0px 30px;
+	font-family: "Assistant", serif;
+	color: #211A1D;
+}
+
+nav a {
+	font-family: "Assistant", serif;
+	font-size:18px; 
+	font-weight: bold;
+	color: #211A1D;
+	padding:20px;
+	text-align: center;
+}
+
+section p::first-letter {
+	font-family: "Playfair Display", serif;
+	font-weight: bold;
+}
+
+a:visited, a:hover {
+	color: #AD343E;
+}
+
+section p:hover, li:hover, dt:hover {
+	color: #6A8D73;
+}
+
+footer p {
+	font-family: "Assistant", serif;
+	color: #6A8D73;
+	display: table-row;
+	font-size: 12px;
+}

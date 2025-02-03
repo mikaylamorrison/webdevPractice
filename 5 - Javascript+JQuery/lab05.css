@@ -1,0 +1,69 @@
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+textarea {
+  padding: 0px 30px 0px 30px;
+  width: 60%;
+  height: 200px;
+  box-sizing: border-box;
+  border: 2px solid #CBD4C2;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+}
+
+.field {
+  width: 40%;
+  box-sizing: border-box;
+  border: 2px solid #CBD4C2;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+}
+
+h1 {
+	font-family: "Playfair Display", serif;
+	color: #011C27;
+	font-weight: bold;
+	text-align: center;
+}
+
+h3{
+	padding: 0px 30px 0px 30px;
+	font-family: "Playfair Display", serif;
+	color: #011C27;
+}
+
+p,label,h4 {
+	padding: 0px 30px 0px 30px;
+	font-family: "Assistant", serif;
+	color: #011C27;
+}
+
+.message
+{
+	padding: 0px 30px 0px 30px;
+	font-family: "Assistant", serif;
+	color: #247BA0;
+}
+
+footer {
+	padding: 0px 30px 0px 30px;
+	font-family: "Assistant", serif;
+	color: #011C27;
+	display: table-row;
+	font-size: 12px;
+}
+
+body 
+{
+	background-image: url("dot-grid.jpeg");
+	text-align: center;
+}
+
+form
+{
+	padding: 0px 30px 0px 30px;
+}

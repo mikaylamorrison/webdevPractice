@@ -1,0 +1,155 @@
+*{box-sizing:border-box;}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] {float:left; padding:30px;}
+
+.row::after {content:""; clear:both; display:table;}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+}
+
+.grid-item {
+  border: 0px;
+  padding: 10px;
+  text-align: center;
+}
+
+.grid-container-img {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+}
+
+.grid-item-img {
+  border: 0px;
+  padding: 10px;
+  text-align: center;
+  width: auto;
+  height: 180px; 
+}
+
+.centerimg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: auto;
+}
+
+body {
+	background-image: url("regal.png");
+}
+
+h1,figcaption {
+	font-family: "Playfair Display", serif;
+	color: #211A1D;
+	font-weight: bold;
+	text-align: center;
+}
+
+h3,h4 {
+	padding: 0px 30px 0px 30px;
+	font-family: "Playfair Display", serif;
+	color: #211A1D;
+}
+
+p, dt, dd, li {
+	padding: 0px 30px 0px 30px;
+	font-family: "Assistant", serif;
+	color: #211A1D;
+}
+
+ul, dl {
+    padding: 0px 30px 0px 30px;
+    list-style-type: square;
+}
+
+a {
+	font-family: "Assistant", serif;
+	font-weight: bold;
+	color: #211A1D;
+}
+
+section p::first-letter {
+	font-family: "Playfair Display", serif;
+	font-weight: bold;
+}
+
+a:visited, a:hover {
+	color: #AD343E;
+}
+
+section p:hover, li:hover, dt:hover {
+	color: #6A8D73;
+}
+
+footer p {
+	font-family: "Assistant", serif;
+	color: #6A8D73;
+	display: table-row;
+	font-size: 12px;
+}
+
+
+@media (min-width: 769px) {
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .grid-container-img {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  p, dt, dd, li {
+  font-size: 20px;
+  }
+  
+}
+
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  p, dt, dd, li {
+  font-size: 18px;
+  }
+
+  .grid-container-img {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .grid-container-img {
+    grid-template-columns: 1fr;
+    width: 100%; 
+  }
+
+  .grid-item-img {
+    grid-template-columns: 1fr;
+    width:100%;
+  }
+  
+  .centerimg {
+    width: 100%; 
+  }
+}
